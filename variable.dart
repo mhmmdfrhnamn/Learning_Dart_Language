@@ -39,6 +39,13 @@ print(person1);
 print(person1);
 print(person2);
 
+// kata kunci late merupakan kata kunci yang menunda variable tampil duluan
+late var value=getValue(); //2
+print('hello'); // 1
+print(value);
+}
 
-
+String getValue(){
+  print('getValue() Dipanggil');
+  return 'Muhammad Farhan Amien';//3
 }
