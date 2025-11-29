@@ -30,6 +30,4 @@ void main(){
 
   var booleanToString = inputBoolean.toString();
   print(booleanToString);
-
-
 }
