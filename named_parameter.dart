@@ -11,7 +11,7 @@ void sayHello({String? firstName, String? lastName}){
 void main (){
   // jadi contohnya jadi fleksibel kyak dibawah ini
   sayHello();
-  sayHello(firstName: 'Muhammad');
+  sayHello(firstName: 'Muhammad'); 
   sayHello(lastName: 'Amien');
   sayHello(firstName: 'Muhammad', lastName: 'Farhan');
   sayHello(firstName: 'Muhammad', lastName: '');
