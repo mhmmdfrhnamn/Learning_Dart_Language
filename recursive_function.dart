@@ -28,8 +28,19 @@ int factorialRecursive(int value){
   }
 }
 
+// contoh stackoverflow
+void loop (int value) {
+  if (value == 0){
+    print('selesai');
+  } else {
+    print('perulangan ke $value');
+    loop(value-1);
+  }
+}
+
 void main () {
   print(factorialLoop(10));
   print(1*2*3*4*5*6*7*8*9*10);
   print(factorialRecursive(10)); //fac(10) => 10 * 9 * fac(8)
+  loop(100000);//ini bakal crash karena stack overflow
 }
