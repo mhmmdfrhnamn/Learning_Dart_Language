@@ -7,12 +7,15 @@ class Person {
 void main () {
 
   var person1 = Person();
-  Person person2 = Person();
-  Person person3 = Person();
 
+  person1.name = 'Muhammad Farhan Amien';
+  person1.addres = 'Pamekasan';
+  // person1.negara = 'Singapore'; final gak bisa dimanipulasi
+
+  print(person1);
   print(person1.name);
-  print(person2.addres);
-  print(person3.negara);
+  print(person1.addres);
+  print(person1.negara);
 
  
 }
