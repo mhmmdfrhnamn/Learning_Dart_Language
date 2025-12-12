@@ -1,8 +1,7 @@
 
-/**
+/*
  * Extension method adalah cara menambahkan method terhadap class yang
  * sudah ada, tanpa harus  mengubah class tersebut 
- * 
  * - hal ini kadang bermanfaat jika misal classnya adalah class milik
  *   library yang bukan kita yang membuatnya.
  * - cara membuatnya hampir sama dengan class cuma kita perlu 
