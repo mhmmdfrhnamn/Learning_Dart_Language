@@ -26,7 +26,7 @@ class Person {
 
 void main (){
 
-  var person = Person('Farhan', 'Kangenan');
+  var person = Person('Muhammad Farhan Amien', 'Pamekasan');
   print(person.name);
   print(person.addres);
 
