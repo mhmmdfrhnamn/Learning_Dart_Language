@@ -2,6 +2,9 @@
  * -Variable shadowing adalah kejadian ketika kita membuat nama variable dengan
  * nama yang sama di scopr yang menutupi variable dengan nama yang sama 
  * di scope diatasnya
+ * 
+ * - Ini biasa terjadi seperti kita membuat parameter di method yang sama dengan nama
+ *   field di class yang sama
  *   
  */
 
