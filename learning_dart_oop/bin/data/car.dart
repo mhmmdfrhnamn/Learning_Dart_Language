@@ -19,7 +19,21 @@
  *   bukan classnya
  * - Angap saja Interface adalah kontrak dari pembuatan class 
  */
-class Car {
+
+
+/* Multiple Interface Inheritance
+ * - Hal yang membedakan ketika kita melakukan pewarisan adalah, kita hanya bisa
+ *   melakukan extend terhadap satu class, namun kita bisa melakukan implements 
+ *   terhadap beberapa class
+ * - Hal ini dikarenakan sebenarnya implements bukan melakukan pewarisan, melainkan
+ *   mendeklarasikan ulang seluruh method dan field
+ * - anggap saja ini seperti membuat class yang berbeda, namun memiliki field dan 
+ *   method yang sama
+ * - Untuk melakukan multiple implements, kita bisa gunakan pemisah tanda koma antar
+ *   class yang kita implements
+ */
+
+abstract class Car {
   
   String name = '';
 
@@ -33,8 +47,13 @@ class Car {
 
 }
 
-// Contoh Interface
-class Avanza implements Car {
+abstract class HasBrand {
+  String getBrand();
+}
+
+// Contoh Interface sekaligus multiple Interface inheritance
+class Avanza implements Car, HasBrand {
+  // mengimplement ulang class Car
   String name = 'Avanza';
 
   void drive(){
@@ -44,4 +63,8 @@ class Avanza implements Car {
   int getTier(){
     return 4;
   }
+
+  // mengimplement ulang class HasBrand
+  String getBrand()=>"Toyota";
+
 }
