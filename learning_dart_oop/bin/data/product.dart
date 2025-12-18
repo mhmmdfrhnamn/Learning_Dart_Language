@@ -19,6 +19,21 @@ class Product {
     return _quantity;
   }
 
+/* ToString Method
+ * - Sebelumnya kita sudah bahas bahwa parent class untuk semua class kecuali null
+ *   adalah Object 
+ * - Di dalam Object, terdapat method bernama toString(), method ini merupakan 
+ *   method untuk representasi String dari Object
+ * - Contohya, saat kita menggunakan function print(object), sebenarnya yang dipanggil
+ *   adalah print(object.toString())
+ * - Kita bisa meng-Override method toString() jika ingin mengimplementasikan 
+ *   representasi data String dari Class yang kita buat
+ */
+String toString(){
+  return 'Product{id = $id, name = $name, quantity = $_quantity} ';
+}
+
+
 }
 
 void main (){
