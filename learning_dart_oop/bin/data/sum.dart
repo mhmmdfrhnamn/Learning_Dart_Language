@@ -21,4 +21,14 @@
  }
 
 
+ /* Typedef
+  * - Typedef merupakan fitur dimana kita bisa membuat alias untuk tipe data lainnya
+  * -  Ini cocok ketika misal terdapat class dengan nama yang sama, sehingga kita
+  *    bisa menggunakan alias untuk nama lain 
+  * - Atau kita bisa mempersigkat nama class yang panjang dengan alias
+  */
+
+  // Contoh TypeDef 
+  typedef Jumlah = Sum;
+  typedef Total = Sum;
 
