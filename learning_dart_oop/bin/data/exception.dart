@@ -37,7 +37,24 @@ class Validation {
 }
 
 void main (){
-  Validation.validate("", "");
+
+  /* Try Catch
+ * - Saat kita memanggil sebuah method yang bisa menyebabkan exeption, maka secara
+ *   otomatis program akan terhenti
+ * - Jika kita tidak ingin program berhenti, kita bisa menggunakan try-catch
+ * - Cara menggunakan try-catch sangat mudah, di block try, kita bisa panggil method
+ *   yang bisa menyebabkan exception, dan di block catch, kita bisa melakukan jika terjadi exception
+ */
+
+  // Contoh Try and Catch
+  try{
+    Validation.validate('', 'farhan');
+  } on ValidationException catch(exception){ //contoh menangkat object exception
+    print('Validation Error : ${exception.message}');
+  }
+
+  print('Selesai');
+
 }
 
 
