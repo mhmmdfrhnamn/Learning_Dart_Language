@@ -30,6 +30,8 @@ class Validation {
       throw ValidationException('Username is blank');
     }else if(password == ""){
       throw ValidationException('Password is blank');
+    } else if(username != 'eko' || password != 'eko'){
+      throw Exception('Login Failed');
     }
     // valid
   }
@@ -51,6 +53,8 @@ void main (){
     Validation.validate('', 'farhan');
   } on ValidationException catch(exception){ //contoh menangkat object exception
     print('Validation Error : ${exception.message}');
+  } on Exception catch (exception) {
+    print('Error : ${exception.toString()}');
   }
 
   print('Selesai');
